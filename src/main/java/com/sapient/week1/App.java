@@ -7,7 +7,7 @@ public class App
 {
 	public static void main(String[] args){System.out.println("Done Properly");}
     	public App(){
-        
+        	System.out.println("Done_Properly_1 ");
     	}
     
 	public Boolean check(int n) {

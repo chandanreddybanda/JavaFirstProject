@@ -1,1 +1,1 @@
-# JavaFirstProject
+# Check out branches for assignments

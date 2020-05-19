@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login_style.css" />
+    </head>
+
+    <body>
+        <div id="login_div" class="login-div">
+            <input type="email" placeholder="Email..." id="email_field" />
+            <input type="password" placeholder="Password..." id="password_field" />
+            <button onclick="login()">Login</button>
+        </div>
+        <script>
+            function login(){
+                var userEmail = document.getElementById("email_field").value;
+                var userPass = document.getElementById("password_field").value;
+                /*
+                    verify_login_details
+                */
+                window.location="index.html";
+            }
+        </script>
+    </body>
+</html>

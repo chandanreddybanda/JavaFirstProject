@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <div id="logout" class="logout-div">
+            <button onclick="logout()">logout</button>
+        </div>
+        <div id="calculator_button" class="calculator-div" >
+            <button onclick="location.href = 'calculator/calculator.html';">calculator</button>
+        </div>
+        <div id="rdio" class="radio-div">
+            <button onclick="radio()">radio button</button>
+        </div>
+    </head>
+    <body>
+        <script>
+            function logout(){
+                window.location="index.html";
+            }
+            function radio(){
+                window.location="radio_calc/radio_calc.html";
+            }
+        </script>
+    </body>
+</html>

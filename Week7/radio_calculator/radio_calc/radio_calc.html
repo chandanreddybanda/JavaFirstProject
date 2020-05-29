@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="radio_calc.js"></script>
+        <link rel="stylesheet" href="radio_calc.css">
+        
+    </head>
+    <body>
+        <div class="toHome">
+            <button onclick="location.href = '../login.html';">Home</button>
+        </div>
+        <div id="number-input" class="number-input">
+            <input id='a' type="integer" ><p style="display:inline" id='sign'></p>
+            <input id='b' type="integer" ><p style="display:inline" > =</p>
+            <input id='c' type="integer" ><br/>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" onclick="sum()">Sum</label>
+            <label><input type="radio" name="optradio" onclick="sub()">Sub</label>
+            <label><input type="radio" name="optradio" onclick="pro()">Pro</label>
+            <label><input type="radio" name="optradio" onclick="div()">Div</label>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<bean id="student1" class="com.sapient.problem3.StudentPOJO">
+		<property name="id" value="1"></property>
+		<property name="name" value="Suresh"></property>
+		<property name="city" value="Warangal"></property>
+	</bean>
+	<bean id="student2" class="com.sapient.problem3.StudentPOJO">
+		<property name="id" value="2"></property>
+		<property name="name" value="Naresh"></property>
+		<property name="city" value="Hyderabad"></property>
+	</bean>
+	<bean id="student3" class="com.sapient.problem3.StudentPOJO">
+		<property name="id" value="3"></property>
+		<property name="name" value="Ramesh"></property>
+		<property name="city" value="Banglore"></property>
+	</bean>
+	<bean id="student4" class="com.sapient.problem3.StudentPOJO">
+		<property name="id" value="4"></property>
+		<property name="name" value="Ganesh"></property>
+		<property name="city" value="Delhi"></property>
+	</bean>
+	<bean id="StudentList" class="com.sapient.problem3.StudentList">
+		<property name="student_list">
+			<map>
+				<entry key="1" value-ref="student1" />
+				<entry key="2" value-ref="student2" />
+				<entry key="3" value-ref="student3" />
+				<entry key="4" value-ref="student4" />
+			</map>
+		</property>
+	</bean>
+</beans>

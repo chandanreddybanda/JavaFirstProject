@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<bean id="employee1" class="com.sapient.employeePOJO">
+		<property name="id" value="101"></property>
+		<property name="name" value="Teja"></property>
+		<property name="city" value="Vijayawada"></property>
+	</bean>
+	<bean id="employee2" class="com.sapient.employeePOJO">
+		<property name="id" value="102"></property>
+		<property name="name" value="Amma"></property>
+		<property name="city" value="Vijayawada"></property>
+	</bean>
+	<bean id="employee3" class="com.sapient.employeePOJO">
+		<property name="id" value="103"></property>
+		<property name="name" value="Dad"></property>
+		<property name="city" value="Vijayawada"></property>
+	</bean>
+	<bean id="demo" class="com.sapient.demo2">
+		<property name="m">
+			<map>
+				<entry key="101" value-ref="employee1" />
+				<entry key="102" value-ref="employee2" />
+				<entry key="103" value-ref="employee3" />
+			</map>
+		</property>
+	</bean>
+</beans>

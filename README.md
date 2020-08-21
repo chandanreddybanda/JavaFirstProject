@@ -1,1 +1,1 @@
-# Check out branches for assignments
+# week_2 asignments
